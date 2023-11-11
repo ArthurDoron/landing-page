@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-image: url(furniture.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a{
+    color: black;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navmenu a:hover{
+    border-bottom: 2px solid gray;
+}
+
+#menu-icon{
+    color:black;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.log{
+    display: inline;
+    color: black;
+    background-color: rgb(219, 216, 216);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.log:hover{
+        background: transparent;
+        border: 1px solid gray;
+        transform: translateX(8px);
+}
+
+.furniture{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 13%;
+}
+
+.furniture-text h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    line-height: 1;
+    color: black;
+    margin: 0;
+
+}
+
+.furniture-text p{
+    color: black;
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+
+}
+
+.furniture-text a{
+    display: inline;
+    color: black;
+    background-color: rgb(219, 216, 216);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.furniture-text a:hover{
+    background: transparent;
+    border: 1px solid gray;
+    transform: translateX(8px);
+}
+
+@media (max-width: 1460px){
+    .navmenu a{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1350px){
+    .navmenu a{
+        font-size: 15px;
+        font-weight: 700;
+}
+}
+
+@media (max-width: 1150px){
+    .navmenu a{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 960px){
+    .navmenu a{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 844px) {
+    #menu-icon {
+        display: block;
+    }
+    .navmenu {
+       position: absolute;
+       top: 100%;
+       right: -100%;
+       width: 300px;
+       height: 40vh;
+       background: rgb(232, 229, 229);
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       padding: 10px 10px;
+       transition: all .55s ease;
+    }
+
+    .navmenu a{
+        display: block;
+        margin: 10px 0;
+        margin-left: 7px 0;
+    }
+
+    .navmenu.open{
+        right: 0;
+    }
+
+}
