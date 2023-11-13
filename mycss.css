@@ -145,10 +145,14 @@ section{
         font-weight: 600;
     }
 }
-@media (max-width: 960px){
+@media (max-width: 980px){
     .navmenu a{
         font-size: 15px;
         font-weight: 600;
+    }
+    .furniture a{
+        padding: 12px 30px;
+        font-weight: 500px;
     }
 }
 
